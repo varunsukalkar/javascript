@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type = "text/javascript"> 
+
+function person(name,age,job){
+
+}
+person.prototype.name = "nicholas";
+person.prototype.age = 29;
+person.prototype.job ="software engineer";
+person.prototype.sayname=function(){
+    console.log(this.name);
+}
+var person1  = new person();
+person1.sayname();
+
+var person2  = new person();
+person2.sayname();
+var person3  = new person();
+person3.sayname();
+
+console.log(person1.sayname==person2.sayname);
+
+console.log(person.prototype.isPrototypeOf(person1))
+console.log(person.prototype.isPrototypeOf(person2))
+
+
+    </script>
+</body>
+</html>
